@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import reactLogo from '../assets/react-logo.svg';
 
 import './header.css';
 
-
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <header className='header-wrapper'>
       {/* React Logo Section */}
@@ -26,9 +27,14 @@ const Header = () => {
         <h1 className='logo-text'>Manoj Portfolio</h1>
       </motion.div>
 
+      {/* Menu button only visible on small devices */}
+      <div className="menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
+        ☰
+      </div>
+
       {/* Navigation Menu */}
       <motion.ul
-        className='nav-links'
+        className={`nav-links ${menuOpen ? 'open' : ''}`}
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.5, duration: 0.8 }}
@@ -39,6 +45,7 @@ const Header = () => {
             whileHover={{ scale: 1.2, color: '#61dafb' }}
             transition={{ type: 'spring', stiffness: 300 }}
             className='nav-item'
+            onClick={() => setMenuOpen(false)} // close menu on click
           >
             <Link to={item === 'Home' ? '/' : `/${item.toLowerCase()}`}>{item}</Link>
           </motion.li>

@@ -88,44 +88,106 @@
   color: #e750a1;
 }
 
-/* Responsive Styling */
-
-/* Small Devices */
-@media (max-width: 600px) {
-  .header-class {
-    flex-direction: column;
+/* Large devices (desktops, 1025px and up) */
+@media (min-width: 1025px) {
+  .header-wrapper {
+    padding: 30px 60px;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
   }
-
-  .header-class ul {
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
+  .menu-btn{
+    display: none;
   }
-  .logo-heading{
+
+  .logo-text {
+    font-size: 28px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 30px;
+  }
+
+  .nav-item a {
     font-size: 18px;
   }
+}
 
-  .options a {
+/* Medium devices (tablets, 769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .header-wrapper {
+    flex-direction: column;
+    padding: 25px 40px;
+    align-items: flex-start;
+  }
+  .menu-btn{
+    display: none;
+  }
+
+  .logo-text {
+    font-size: 22px;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .nav-item a {
     font-size: 16px;
   }
 }
 
-/* Medium Devices */
-@media (min-width: 601px) and (max-width: 1024px) {
-  .logo-heading {
+/* Small devices (phones, up to 768px) */
+@media (max-width: 768px) {
+  .header-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
+    padding: 20px 25px;
+  }
+
+  .react-logo {
+    width: 30px;
+    height: 30px;
+  }.menu-btn {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+  .menu-btn {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+
+  .logo-text {
     font-size: 18px;
   }
 
-  .options a {
-    font-size: 17px;
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 10px;
   }
-}
-@media (min-width:1025px){
-  .logo-heading{
-    font-size: 18px;
-  }
-  a{
-    padding-right: 10px;
+
+  .nav-item a {
+    font-size: 14px;
   }
 }
