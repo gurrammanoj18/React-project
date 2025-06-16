@@ -1,0 +1,82 @@
+/* Header Wrapper */
+.header-class {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: #192b36;
+  color: rgb(255, 255, 255);
+  flex-wrap: wrap;
+}
+
+/* Logo */
+.logo-heading {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Navigation Menu */
+.header-class ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+/* Each Nav Item */
+.options a {
+  text-decoration: none;
+  color: rgb(234, 202, 202);
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.options a:hover {
+  color: #e750a1;
+}
+
+/* Responsive Styling */
+
+/* Small Devices */
+@media (max-width: 600px) {
+  .header-class {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-class ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .logo-heading{
+    font-size: 18px;
+  }
+
+  .options a {
+    font-size: 16px;
+  }
+}
+
+/* Medium Devices */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .logo-heading {
+    font-size: 18px;
+  }
+
+  .options a {
+    font-size: 17px;
+  }
+}
+@media (min-width:1025px){
+  .logo-heading{
+    font-size: 18px;
+  }
+  a{
+    padding-right: 10px;
+  }
+}

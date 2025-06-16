@@ -1,0 +1,180 @@
+/* Container */
+.container {
+  padding: 30px 20px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Project Heading */
+.project-heading {
+  font-size: 30px;
+  color: #2c3e50;
+  margin-bottom: 5px;
+  padding-left: 2px;
+}
+
+/* Project Wrapper */
+.project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Individual Project */
+.project {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  max-width: 800px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  margin: 10px;
+}
+
+/* Project Title */
+.project-name {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+/* Skills Used Heading */
+.skill-used {
+  font-size: 20px;
+  margin-top: 15px;
+  color: #2980b9;
+}
+
+/* Skills List */
+.food-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+
+  margin-top: 10px;
+}
+
+.skill-food {
+  background-color: #d6eaff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+/* Project Link */
+.link-div {
+  margin-top: 10px;
+  padding-left: 23px;
+}
+
+.link-food {
+  text-decoration: none;
+  color: #3a2727;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.link-food:hover {
+  background-color: #1f6699;
+}
+
+/* Toggle Button */
+.toggle-btn {
+  margin-top: 20px;
+  padding: 10px 18px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #1e874b;
+}
+
+/* Project Description List */
+.list-items {
+  margin-top: 20px;
+  list-style-type: decimal;
+  padding-left: 20px;
+  color: #555;
+  font-size: 16px;
+}
+
+.project-list {
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+
+/* Small Devices (≤ 600px) */
+@media (max-width: 600px) {
+  .project {
+    padding: 20px;
+    padding: 20px;
+  }
+
+  .project-heading {
+    font-size: 26px;
+    
+  }
+
+  .project-name {
+    font-size: 20px;
+  }
+
+  .skill-food {
+    font-size: 14px;
+    padding: 6px 12px;
+    width: 73px;
+  }
+  .food-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding-left: 48px;
+    margin-top: 10px;
+}
+
+  .toggle-btn {
+    width: 100%;
+  }
+}
+
+/* Medium Devices (601px - 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .project {
+    padding: 25px;
+  }
+
+  .skill-food {
+    font-size: 15px;
+  }
+  
+ 
+}
+
+@media (min-width:1025px){
+    .project-heading{
+        padding-left: 175px;
+    }
+    .project-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding-left: 220px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
