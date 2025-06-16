@@ -19,7 +19,7 @@ const Courses = () => {
           transition={{ duration: 1 }}
         >
           <img
-            src='https://i0.wp.com/goodnesslot.com/wp-content/uploads/2024/03/59-2.jpg?resize=500%2C500&ssl=1'
+            src='https://i.ibb.co/LzXM3Fgz/pic.jpg'
             className='img'
             alt='Profile'
           />
