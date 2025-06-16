@@ -1,14 +1,22 @@
-.img-bg{
-    background-image: url("https://bs-uploads.toptal.io/blackfish-uploads/components/blog_post_page/5992673/cover_image/optimized/1005_Design-Patterns-in-React_Cover-50911a22c4656a1f2a381b6c9ca38d57.png");
-    height: 100vh;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding-top: 0px;
-}
+
 .react-heading{
     color: white;
     text-align: center;
     font-size: 60px;
+}
+.img-bg {
+  height: 95vh;
+  background-image: url("https://bs-uploads.toptal.io/blackfish-uploads/components/blog_post_page/5992673/cover_image/optimized/1005_Design-Patterns-in-React_Cover-50911a22c4656a1f2a381b6c9ca38d57.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.react-heading {
+  font-size: 3rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
