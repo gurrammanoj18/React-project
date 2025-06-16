@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 
 const About = () => {
   return (
+    <div className='footer-bg'>
     <motion.div
       className='footer-container'
       id='AboutSection'
@@ -45,6 +46,7 @@ const About = () => {
         </p>
       </motion.div>
     </motion.div>
+  </div>
   );
 };
 

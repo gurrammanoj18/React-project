@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 
 const Courses = () => {
   return (
+    <div className='profile-bg'>
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
@@ -55,6 +56,7 @@ const Courses = () => {
         </ul>
       </motion.div>
     </motion.div>
+    </div>
   );
 };
 

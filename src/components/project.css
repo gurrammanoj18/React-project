@@ -1,7 +1,9 @@
 /* Container */
 .container {
   padding: 30px 20px;
-  background-color: #f9f9f9;
+  background-image: url("https://res.cloudinary.com/people-matters/image/upload/fl_immutable_cache,w_624,h_351,q_auto,f_auto/v1567070991/1567070990.jpg");
+  height: 100vh;
+  background-size: cover;
   display: flex;
   flex-direction: column;
 }
