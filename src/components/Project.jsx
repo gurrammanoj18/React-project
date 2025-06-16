@@ -24,7 +24,7 @@ const Project = () => {
           className='project'
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
+          transition={{ delay: 0.4 }}
         >
           <h1 className='project-name'>Water Services Responsive Website</h1>
           <h2 className='skill-used'>Skills used:</h2>
@@ -56,7 +56,7 @@ const Project = () => {
                 initial={{ opacity: 0, height: 0 }}
                 animate={{ opacity: 1, height: 'auto' }}
                 exit={{ opacity: 0, height: 0 }}
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 0.6 }}
               >
                 <li className='project-list'>Designed the Mallikarjuna Water Plant website with a clean and responsive layout using HTML, CSS, and JavaScript.</li>
                 <li className='project-list'>Built with React.js to create reusable components and smooth navigation.</li>
@@ -73,7 +73,7 @@ const Project = () => {
           className='project'
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4 }}
+          transition={{ delay: 0.3 }}
         >
           <h1 className='project-name'>Food Responsive Website</h1>
           <h2 className='skill-used'>Skills used:</h2>
@@ -105,7 +105,7 @@ const Project = () => {
                 initial={{ opacity: 0, height: 0 }}
                 animate={{ opacity: 1, height: 'auto' }}
                 exit={{ opacity: 0, height: 0 }}
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 0.6 }}
               >
                 <li className='project-list'>Developed a mobile-first food website using HTML, CSS, and JavaScript.</li>
                 <li className='project-list'>Used media queries for responsive layout on all devices.</li>

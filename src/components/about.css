@@ -4,7 +4,7 @@
   justify-content:space-around;
   align-items: center;
   padding: 40px 20px;
-  background-color: #413434;
+  background-color: #584e4e;
   flex-wrap: wrap;
   height: 50vh;
 }
@@ -47,6 +47,41 @@
   transition: color 0.3s ease, transform 0.3s ease;
   font-weight: bold;
 }
+.footer-container {
+  background-color: #222;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+  flex-wrap: wrap;
+}
+
+.About-us-footer {
+  margin: 10px 0;
+  max-width: 300px;
+}
+
+.follow-me {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #00f0ff;
+}
+
+.para {
+  margin: 8px 0;
+  font-size: 1.1rem;
+}
+
+.email {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.email:hover {
+  color: #00f0ff;
+}
+
 
 .email:hover {
   color: #da5bb2;

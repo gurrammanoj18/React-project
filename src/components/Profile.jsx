@@ -8,14 +8,14 @@ const Courses = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
-      transition={{ duration: 0.6 }}
+      transition={{ duration: 1 }}
     >
       <div className='main-container'> 
         <motion.div
           className='img-container'
           initial={{ scale: 0.8 }}
           animate={{ scale: 1 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 1 }}
         >
           <img
             src='https://i0.wp.com/goodnesslot.com/wp-content/uploads/2024/03/59-2.jpg?resize=500%2C500&ssl=1'
